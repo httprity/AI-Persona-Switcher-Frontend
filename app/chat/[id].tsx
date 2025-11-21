@@ -56,7 +56,7 @@ export default function ChatScreen() {
         { role: "user", content: input },
       ];
 
-      const response = await fetch("http://192.168.0.103:4000/chat", {
+      const response = await fetch("https://ai-persona-switcher-backend.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
